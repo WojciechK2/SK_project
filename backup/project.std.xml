@@ -404,17 +404,6 @@
   <availiable_buildings no_of_avail="0"/>
  </BestLOSBuildings>
  <GraphicObjectList number="2">
-  <GraphicObject graphic_type="7">
-   <RectangleObject is_rounded="false">
-    <GraphicalObject Id="" IndexForLabel="2070286368" width="1.0">
-     <Color r="0" g="0" b="0"/>
-     <LatLongTypeList number="2">
-      <LatLongPair latitude="44.6821831999285" longitude="-123.4095098899771"/>
-      <LatLongPair latitude="44.23208086465989" longitude="-122.7799503635426"/>
-     </LatLongTypeList>
-    </GraphicalObject>
-   </RectangleObject>
-  </GraphicObject>
   <GraphicObject graphic_type="14">
    <ServiceAreaBoundaryObject Level_Type="2" GUID="df5c1917-dc3a-438e-b0f1-879017499f04" ParentGUID="">
     <PolygonObject UseFillPattern="false">
@@ -440,6 +429,17 @@
      </PolylineObject>
     </PolygonObject>
    </ServiceAreaBoundaryObject>
+  </GraphicObject>
+  <GraphicObject graphic_type="7">
+   <RectangleObject is_rounded="false">
+    <GraphicalObject Id="" IndexForLabel="0" width="1.0">
+     <Color r="0" g="0" b="0"/>
+     <LatLongTypeList number="2">
+      <LatLongPair latitude="44.6821831999285" longitude="-123.4095098899771"/>
+      <LatLongPair latitude="44.23208086465989" longitude="-122.7799503635426"/>
+     </LatLongTypeList>
+    </GraphicalObject>
+   </RectangleObject>
   </GraphicObject>
  </GraphicObjectList>
  <RFLabelObjectList number="0"/>
@@ -2149,7 +2149,11 @@
  </MultipointStudyLayout>
  <NeighborListGeneration max_neighbors="4" include_2nd_servers="true" include_3rd_servers="true" exclude_co_channel_neighbors="true" group_identifier="master group" server_selection="PowerReceived" copy_predicted_to_actual="false" remote_unit_ID="0"/>
  <TxGroups size="1">
-  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="0"/>
+  <TxGroup name="Master group" guid="a07b661e-f7c1-4c14-ae37-116aeebd111e" description="All sites and sectors" receiver_locked="false" number="3">
+   <TX_ID id="ABAA0001" active="true"/>
+   <TX_ID id="ABAA0002" active="true"/>
+   <TX_ID id="ABAA0003" active="true"/>
+  </TxGroup>
  </TxGroups>
  <LinkGroups size="1">
   <LinkGroupCreationOptions RF_group_name="Master group" link_template_name="" link_group_name="" link_group_description="" limit_distance="false" limit_distance_max="1.0"/>
